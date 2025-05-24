@@ -152,8 +152,9 @@ footer img {
     max-height: 30vh;
     display: flex;
     align-self: flex-end;
-    margin-right: 100vw;
-    margin-left: -17vw;
+    margin-right: 0;
+    margin-left: 0;
+}
     transform: rotate(-30deg);
     transform-origin: left center;
     cursor: pointer;
@@ -165,17 +166,51 @@ footer img {
     header {
         font-size: 8vw;
     }
+
+    ul.nav {
+    flex-wrap: wrap;
+    }
+    
+    li.nav-item {
+    width: auto;
+    font-size: 5vw;
+    padding: 5vw;
+    }
+    
     .news-block {
         flex-direction: column;
         align-items: stretch;
+        margin: 3vh 3vw;
     }
 
     .news-article,
     .news-illustration {
         flex: 1 1 100%;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 
     .article-meta {
         text-align: center;
     }
+
+    footer {
+        min-height: auto; 
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5vh 3vw;
+    }
+
+    .footer-content {
+        font-size: 8vw; 
+        padding: 0;
+        text-align: center;
+    }
+
+    footer img {
+        max-width: 50vw;
+        max-height: 20vh;
+        margin: 2vh auto 0 auto;
+    }
+
 }
